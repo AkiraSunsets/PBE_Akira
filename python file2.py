@@ -1,12 +1,12 @@
 #1
-num = int(input("Insira um número: "))
+num = int(input("Insira um número: \n"))
 if num % 2 == 0:
     print("Esse número é par")
 else:
     print("Esse número é impar")
 
 #2
-num = int(input("Insira um número: "))
+num = int(input("Insira um número: \n"))
 if num > 10:
     print("O número é maior que 10")
 else:
@@ -22,7 +22,7 @@ else:
 
 
 #4
-idade = int(input("Insira sua idade: "))
+idade = int(input("Insira sua idade: \n"))
 if idade < 16:
     print("Não tem voto")
 elif 17 <= idade <=69:
@@ -43,7 +43,7 @@ else:
 
 
 #6
-nota = int(input("Digite sua nota: "))
+nota = int(input("Digite sua nota: \n"))
 
 if nota >= 9 and nota < 10:
     print("A")
@@ -65,7 +65,7 @@ else:
 
 
 #7
-idade = int(input("Digite sua idade: "))
+idade = int(input("Digite sua idade: \n"))
 if idade < 13:
     print("Você possui desconto")
 
@@ -89,7 +89,7 @@ else:
    print('Escaleno')
 
 #9
-valor = float(input("Digite o valor total da sua compra em R$: "))
+valor = float(input("Digite o valor total da sua compra em R$: \n"))
 if valor < 100:
     desconto = 0.05
     print("Você possui 5% de desconto")
@@ -109,14 +109,14 @@ print(f"Desconto: R$ {valor_desconto:.2f}")
 print(f"Valor final a pagar: R$ {valor_final:.2f}")
 
 #10
-ano = int(input("Digite um ano: "))
+ano = int(input("Digite um ano: \n"))
 if (ano%4==0 and ano%100!=0) or (ano%400==0):
     print("É bissexto")
 else:
     print("Não é bissexto")
 
 #11
-peso = float(input("Insira seu peso em kg: "))
+peso = float(input("Insira seu peso em kg: \n"))
 altura = float(input("Insira sua altura em metros: "))
 imc = peso / (altura ** 2)
 
@@ -134,9 +134,9 @@ else:
 
 
 #12 Solicite ao usuário três números e diga se estão em ordem crescente, decrescente ou se são iguais.
-n1 = int(input("Digite o primeiro número: "))
-n2 = int(input("Digite o segundo número: "))
-n3 = int(input("Digite o terceiro número: "))
+n1 = int(input("Digite o primeiro número: \n"))
+n2 = int(input("Digite o segundo número: \n"))
+n3 = int(input("Digite o terceiro número: \n"))
 
 if n1 < n2 and n2 < n3:
     print("Ordem crescente")
@@ -149,7 +149,7 @@ else:
 
 
 #13
-temperatura = float(input("Digite a temperatura: "))
+temperatura = float(input("Digite a temperatura: \n"))
 if temperatura < 10:
     print("Frio")
 
@@ -165,7 +165,7 @@ else:
 #14
 from datetime import datetime
 
-data_input = input("Digite uma data no formato dd/mm/aaaa: ")
+data_input = input("Digite uma data no formato dd/mm/aaaa: \n")
 
 data_formatada = datetime.strptime(data_input, "%d/%m/%Y").strftime("%Y-%m-%d")
 
@@ -174,7 +174,7 @@ print("A data formatada é:", data_formatada)
 #15
 import re
 
-senha = input("Digite uma senha: ")
+senha = input("Digite uma senha: \n")
 
 if len(senha) < 8:
     print("Sua senha precisa ter pelo menos 8 caracteres. Tente novamente.")
@@ -201,7 +201,7 @@ else:
     print(f"A raiz quadrada de {num} é {raiz:.2f}.")
 
 #17
-data = input("Escreva a data no seguinte formato (dd/mm/aaaa): ")
+data = input("Escreva a data no seguinte formato (dd/mm/aaaa): \n")
 partes = data.split("/")
 dia = int(partes[0])
 mes = int(partes[1])
@@ -227,7 +227,7 @@ else:
 
 #18
 
-expressao = input("Digite uma expressão matemática: ")
+expressao = input("Digite uma expressão matemática: \n")
 
 resultado = eval(expressao)
 
