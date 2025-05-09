@@ -1,20 +1,10 @@
 print("Boas vindas curso online, 3 alunos se matricularam, João, Maria, Carlos")
-aluno1 = João
-aluno2 = Maria
-aluno3 = Carlos
 
-def alunos(aluno1,aluno2,aluno3):
-    print("Sejam bem vindos ao curso online!")
+def boas_vindas():
+    print("Sejam bem vindos ao curso online, João!")
+    print("Sejam bem vindos ao curso online, Maria!")
+    print("Sejam bem vindos ao curso online, Carlos!")
 
-saudacao = alunos(aluno1,aluno2,aluno3)
-
-print(saudacao)
+boas_vindas()
 
 
-
-
-
-
-
-
-saudacao()
