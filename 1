@@ -3,7 +3,7 @@ class Veiculo:
         self.tipo = tipo
 
     def especificar(self):
-        Pass
+        pass
 
 class Carro:
     def __init__(self, nome, cor, situacao):
@@ -14,7 +14,7 @@ class Carro:
     def estado(self):
         print(f"O {self.nome} {self.cor} está {self.situacao} e pode andar!")
 
-class Caminhão:
+class Caminhao:
     def __init__(self, nome, cor, situacao):
         self.nome = nome
         self.cor = cor
@@ -24,10 +24,6 @@ class Caminhão:
         print(f"O {self.nome} {self.cor} está com {self.situacao} e não pode andar")
 
 class Moto:
-
-    def __int__(self, status):
-        self._estado = batido
-
     def __init__(self, nome, cor, situacao):
         self.nome = nome
         self.cor = cor
@@ -36,11 +32,11 @@ class Moto:
     def estado(self):
         print(f"A {self.nome} {self.cor} está {self.situacao} e não pode andar")
 
-car = Carro("Carro", "Preto","regularizado")
+car = Carro("Carro", "Preto", "regularizado")
 car.estado()
 
-cam = Caminhão("Caminhão", "azul", "documento atrasado")
+cam = Caminhao("Caminhão", "Azul", "documento atrasado")
 cam.estado()
 
-moto = Moto("Moto","vermelha", "irregular")
+moto = Moto("Moto", "Vermelha", "irregular")
 moto.estado()
